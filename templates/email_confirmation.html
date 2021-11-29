@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+Welcome To Our Website Login
+
+Hello{{ name }}
+
+Please Confirm Your Email By Clicking On The Following Link.
+
+Confirmation Link: http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+{% endautoescape %}
